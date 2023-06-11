@@ -17,35 +17,38 @@ function Banner() {
     }, [])
     return (
         <>
-            {
-                bannerMovie == "" ?
-                    <div className="
-                    flex justify-center"><Oval
-                        height="80"
-                        width="80"
-                        radius="9"
-                        color="gray"
-                        secondaryColor='gray'
-                        ariaLabel="loading"
+            {/* {
+                bannerMovie == "" ? */}
+            {/* <div className="
+                    flex justify-center">
+                    <Oval
+                            height="80"
+                            width="80"
+                            radius="9"
+                            color="gray"
+                            secondaryColor='gray'
+                            ariaLabel="loading"
 
-                    /></div>
-                    :
-                    <div className={`
-                    h-[40vh] md:h-[60vh]
-            bg-center bg-cover
-            flex items-end 
-            `}
-                        style={{
-                            backgroundImage:
-                                `url(
-                                    https://image.tmdb.org/t/p/original/t/p/original/${bannerMovie.backdrop_path})`
-                        }}
-                    >
-                        <div
-                            className="text-xl md:text-3xltext-whitebg-gray-900 bg-opacity-60 p-4 text-center w-full"
-                        >{bannerMovie.name}</div>
-                    </div>
-            }
+                        /></div>
+                    : */}
+            <div
+                className={`
+                        h-[40vh] md:h-[60vh]
+                bg-center bg-cover
+                flex items-end bg-banner
+                `}
+            // style={{
+            //     backgroundImage:
+            //         `url(./components/image.jpg)`
+            // }}
+            >
+                {/* <img className={` h-[40vh] md:h-[60vh] bg-center bg-cover`}
+                src='https://pokeapi.co/static/pokeapi_256.3fa72200.png' alt='banner' /> */}
+                {/* <div
+                    className="text-xl md:text-3xltext-whitebg-gray-900 bg-opacity-60 p-4 text-center w-full"
+                >Pokemon</div> */}
+            </div>
+            {/* } */}
 
 
         </>
