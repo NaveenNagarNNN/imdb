@@ -4,6 +4,7 @@ import { Oval } from "react-loader-spinner";
 function Banner() {
     let [bannerMovie, setBanner] = useState("");
 
+
     useEffect(function () {
         (function () {
             axios

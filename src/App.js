@@ -15,6 +15,7 @@ function App() {
         {/* <h1> Hello React ❤️</h1> */}
         <NavBar></NavBar>
         <Routes>
+
           <Route path="/" element={
             <>
               <Banner />
