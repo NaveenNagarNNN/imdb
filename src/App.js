@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
-import Movies from './components/Movies';
+import Home from './components/Home';
 import Pagination from './components/Pagination';
-import { BrowserRouter, Routes, Route }
-  from "react-router-dom"
-import Favourites from './components/Favourites';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+// import Favourites from './components/Favourites';
 import PageNotFound from './components/PageNotFound';
+import DataPokemon from './components/DataPokemon';
 function App() {
   return (
     <>
@@ -15,24 +15,15 @@ function App() {
         {/* <h1> Hello React ❤️</h1> */}
         <NavBar></NavBar>
         <Routes>
+
           <Route path="/" element={
             <>
-              <Banner></Banner>
-              <Movies></Movies>
-            </>
-          }></Route>
-
-          <Route path="/fav" element={
-            <Favourites></Favourites>
-          }></Route>
-
-          <Route path="*"
-            element={<PageNotFound></PageNotFound>}>
-          </Route>
+              <Banner />
+              <Home />
+            </>} />
+          <Route path="/data/:name" element={<DataPokemon />} />
+          <Route path="*" element={<PageNotFound></PageNotFound>} />
         </Routes>
-
-
-
       </BrowserRouter>
 
     </>

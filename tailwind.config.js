@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "banner": "url(./components/image.jpg)"
+        "banner": "url(./components/pokemon.png)"
       }
     },
   },
