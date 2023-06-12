@@ -9,15 +9,19 @@ function NavBar() {
       space-x-8
       pl-3 py-4
        ">
-            <img src={Logo} alt='logo'
+            <img src={Logo}
                 className="w-[50px]"
             />
-            <Link to="/" className="font-bold 
+            <Link  to ="/" className="font-bold 
             text-xl
             text-blue-400
             "
-            >Home</Link>
-            {/* <Link to="/pokemondata" className="font-bold text-xl text-blue-400"> Favourites</Link> */}
+            >Movies</Link>
+            <Link  to ="/fav" className="font-bold
+            text-xl
+            text-blue-400
+            
+            "> Favourites</Link>
         </div>
     )
 }
